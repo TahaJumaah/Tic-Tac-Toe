@@ -14,6 +14,7 @@ for (let index = 0; index < allInsideDivs.length; index++) {
             
             showWinner.textContent = winner + '!';
             showWinner.className = 'winner';
+            
         }
         
 })};

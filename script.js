@@ -6,7 +6,7 @@ let showWinner = document.querySelector('.game-desc1');
 
 for (let index = 0; index < allInsideDivs.length; index++) {
     const element = allInsideDivs[index];
-    element.addEventListener('pointerdown' , ()=> {
+    element.addEventListener('pointerup' , ()=> {
         pressedDiv = element;
         whosTurnIsIt();
         whoWon();
@@ -182,7 +182,7 @@ function whoWon() {
 
 // Resetting the Board
 let resetButton = document.getElementById('reset-button');
-resetButton.addEventListener('pointerdown', ()=>
+resetButton.addEventListener('pointerup', ()=>
 {
     for (let index = 0; index < allInsideDivs.length; index++) {
         const element = allInsideDivs[index];
